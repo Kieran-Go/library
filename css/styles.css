@@ -1,7 +1,10 @@
-table{
+table, .form-container, .btn-container{
     text-align: center;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
     width: 50%;
     border-collapse: collapse;
 }
@@ -12,7 +15,15 @@ caption{
     margin: 20px 0;
 }
 
-th, tr, td{
+th, tr .table-data{
     border: 2px solid;
     padding: 5px;
+}
+
+.form-container, .btn-container{
+    margin: 20px 0;
+}
+
+.input-container{
+    margin: 20px;
 }
