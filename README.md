@@ -1,1 +1,1 @@
-# library
+A practice project to create a mock library. Meant to practice using objects in Javascript
