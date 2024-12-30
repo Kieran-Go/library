@@ -1,13 +1,17 @@
-function Book(name, author, pages, read){
-    this.name = name;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.info = function(){
-        const readStatus = this.read ? "has been read" : "not read yet"; 
-        return `${name} by ${author}, ${pages} pages, ${readStatus}.`;
+class Book{
+    constructor(name, author, pages, read){
+        this.name = name;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
     }
-    this.toggleRead = function(){
+
+    info(){
+        const readStatus = this.read ? "has been read" : "not read yet"; 
+        return `${this.name} by ${this.author}, ${this.pages} pages, ${this.readStatus}.`;
+    }
+
+    toggleRead(){
         this.read = !this.read;
     }
 }
